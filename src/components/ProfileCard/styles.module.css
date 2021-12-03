@@ -1,0 +1,124 @@
+.profile-card {
+  height: 374px;
+  width: 350px;
+  border-radius: 15px;
+  background-color: white;
+  background-image: url('../../assets/desktop-card-bg.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  padding-top: 91px;
+}
+
+.avatar img {
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  object-fit: fill;
+  outline: 5px solid #FFFFFF;
+}
+
+.info {
+  display: flex;
+  max-width: 135px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 23px;
+}
+
+.info .name {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-right: 8.5px;
+  margin-bottom: 13px;
+}
+
+.info .age {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.info .city {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #E8E9EC;
+  margin-top: 29px;
+}
+
+.stats {
+  margin-top: 24px;
+  margin-right: 54px;
+  margin-left: 47px;
+  width: 249px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stats .container {
+  padding-left: 1.5px;
+}
+
+.stats > :nth-child(2) {
+  margin-right: 6px;
+}
+
+.stats .label {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1.5px;
+
+  color: #6B7082;
+}
+
+.stats .counter {
+  font-family: Kumbh Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #2E3349;
+  margin-bottom: 10px;
+  margin-top: -2px;
+}
+
+@media screen and (max-width: 375px) {
+  
+  .profile-card {
+    width: 326px;
+    background-image: url('../../assets/mobile-card-bg.svg');
+  }
+}

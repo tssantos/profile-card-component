@@ -1,0 +1,17 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19A1AE;
+  background-image: url('./assets/desktop-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+  .app {
+    background-image: url('./assets/mobile-bg.svg');
+  }
+}
